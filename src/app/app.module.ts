@@ -5,13 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { ContadorModule } from './contador/contador.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 // El uso de modulos ayuda con la carga perezosa
 // Que sean cargados bajo demanda
 
 @NgModule({
-  // usualmente van comonentes
+  // usualmente van componentes
   declarations: [
     AppComponent,  
   ],
@@ -20,7 +21,8 @@ import { ContadorModule } from './contador/contador.module';
     BrowserModule,
     AppRoutingModule,
     ContadorModule,
-    HeroesModule
+    HeroesModule,
+    DbzModule
   ],
   // servicios especificos
   providers: [],
